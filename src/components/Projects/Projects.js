@@ -7,7 +7,8 @@ import emotion from "../../Assets/Projects/emotion.png";
 import airbnb from "../../Assets/Projects/airbnb.png";
 import crypto from "../../Assets/Projects/crypto.png";
 import portal from "../../Assets/Projects/onlineportal.jpg";
-import shopping from "../../Assets/Projects/shopping.png";
+
+import ayodhya from "../../Assets/Projects/Ayodhya.png";
 
 function Projects() {
   return (
@@ -22,6 +23,17 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
+             <ProjectCard
+              imgPath={ayodhya}
+              isBlog={false}
+              title="Ayodhya Bhraman Website"
+              description="This project help commecial businessman to grow their business providing details about the small business.A research paper is also presented. "
+              ghLink="https://github.com/Nishita0807/ayodhya-bhraman-frontend.git"
+              demoLink="https://ayodhya-bhraman-frontend.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={crypto}
               isBlog={false}
@@ -30,17 +42,7 @@ function Projects() {
               ghLink="https://github.com/Nishita0807/crypto-coin-project.git"
               demoLink="https://crypto-coin-nishita.netlify.app/"
             />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={shopping}
-              isBlog={false}
-              title="Shopping-Cart-Redux"
-              description="In this project , using redux management tool using react-app. Featured the functionality of calculating price as per the selection of items. "
-              ghLink="https://github.com/Nishita0807/shopping-cart-redux.git"
-              demoLink="https://shopping-cart-redux-six-lyart.vercel.app/"
-            />
+           
           </Col>
 
           <Col md={4} className="project-card">
